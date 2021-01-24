@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="546.0" prefWidth="590.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SearchRoomController">
+   <children>
+      <TableView fx:id="roomTable" layoutX="18.0" layoutY="65.0" prefHeight="465.0" prefWidth="553.0">
+        <columns>
+          <TableColumn fx:id="roomType" prefWidth="136.0" text="Room Type" />
+            <TableColumn fx:id="roomNumber" prefWidth="83.0" text="Room Number" />
+            <TableColumn fx:id="roomStatus" prefWidth="85.0" text="Room Status" />
+            <TableColumn fx:id="price" prefWidth="75.0" text="Price" />
+            <TableColumn fx:id="cleanStatus" prefWidth="81.0" text="Clean Status" />
+            <TableColumn fx:id="availableDate" prefWidth="99.0" text="Available Date" />
+        </columns>
+      </TableView>
+      <Button layoutX="175.0" layoutY="14.0" mnemonicParsing="false" onAction="#Book" text="Book" />
+      <Button layoutX="251.0" layoutY="14.0" mnemonicParsing="false" onAction="#Back" text="Back" />
+      <TextField fx:id="room_Type" layoutX="18.0" layoutY="14.0" promptText="Room Type" />
+   </children>
+</AnchorPane>
